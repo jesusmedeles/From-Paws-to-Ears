@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="From Paws to Ears: pet care tips and guides for Dobermans, Pomeranians, and Lionhead Dwarf Rabbits.">
-  <title>Home • From Paws to Ears</title>
+  <meta name="description" content="Doberman care guide: health, temperament, diet, and hygiene.">
+  <title>Doberman • From Paws to Ears</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,9 +13,9 @@
       <a class="brand" href="index.html">From Paws to Ears</a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">Menu</button>
       <nav id="primary-nav" class="nav">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="doberman.html">Doberman</a>
+        <a href="doberman.html" class="active">Doberman</a>
         <a href="pomeranian.html">Pomeranian</a>
         <a href="rabbit.html">Lionhead Dwarf Rabbit</a>
         <a href="contact.html">Contact</a>
@@ -23,34 +23,42 @@
     </div>
   </header>
 
-  <section class="hero">
-    <img src="images/trio.png" alt="Zeus the Doberman, Simba the Pomeranian, and Gandalf the Lionhead Dwarf Rabbit together">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>From Paws to Ears</h1>
-      <p>Care guides, tips, and real-life experiences with Zeus, Simba, and Gandalf.</p>
-      <p style="margin-top:1rem"><a class="btn" href="about.html">Learn more</a></p>
-    </div>
-  </section>
-
   <section class="section">
     <div class="container">
-      <h2>Meet the Crew</h2>
-      <div class="grid three">
+      <h2>Doberman</h2>
+      <p class="card"><img src="images/zeus.png" alt="Zeus the Doberman" /></p>
+      <div class="grid two">
         <div class="card">
-          <h3>Zeus · Doberman</h3>
-          <p>Strong, loyal, and goofy on weekends.</p>
-          <a class="btn" href="doberman.html">Doberman Guide</a>
+          <h3>Health Concerns</h3>
+          <ul>
+            <li>Placeholder tip 1</li>
+            <li>Placeholder tip 2</li>
+            <li>Placeholder tip 3</li>
+          </ul>
         </div>
         <div class="card">
-          <h3>Simba · Pomeranian</h3>
-          <p>Compact fluff ball with a big personality.</p>
-          <a class="btn" href="pomeranian.html">Pomeranian Guide</a>
+          <h3>Temperament</h3>
+          <ul>
+            <li>Placeholder trait 1</li>
+            <li>Placeholder trait 2</li>
+            <li>Placeholder trait 3</li>
+          </ul>
         </div>
         <div class="card">
-          <h3>Gandalf · Lionhead Dwarf Rabbit</h3>
-          <p>Wise whiskers and gentle hops.</p>
-          <a class="btn" href="rabbit.html">Rabbit Guide</a>
+          <h3>Diet</h3>
+          <ul>
+            <li>Placeholder diet note 1</li>
+            <li>Placeholder diet note 2</li>
+            <li>Placeholder diet note 3</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Hygiene</h3>
+          <ul>
+            <li>Placeholder hygiene tip 1</li>
+            <li>Placeholder hygiene tip 2</li>
+            <li>Placeholder hygiene tip 3</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -58,7 +66,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> From Paws to Ears · Built with love for Zeus, Simba, and Gandalf.</p>
+      <p>&copy; <span id="year"></span> From Paws to Ears</p>
     </div>
   </footer>
   <script src="script.js"></script>
@@ -79,4 +87,3 @@ if (toggle && nav){
 // Year in footer
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
-

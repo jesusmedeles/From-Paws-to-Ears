@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About From Paws to Ears">
+  <title>About • From Paws to Ears</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">From Paws to Ears</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">Menu</button>
+      <nav id="primary-nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="doberman.html">Doberman</a>
+        <a href="pomeranian.html">Pomeranian</a>
+        <a href="rabbit.html">Lionhead Dwarf Rabbit</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>About From Paws to Ears</h2>
+      <p>This site shares what we've learned raising <strong>Zeus</strong> (Doberman), <strong>Simba</strong> (Pomeranian), and <strong>Gandalf</strong> (Lionhead Dwarf Rabbit). Our goal is to help families understand health, temperament, diet, and hygiene for each pet—without the fluff (okay, except Simba's).</p>
+      <div class="card">
+        <p>Explore each guide for practical tips, vet-informed checklists, and everyday routines that keep our trio happy and healthy.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> From Paws to Ears</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+// Mobile menu toggle
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#primary-nav');
+if (toggle && nav){
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('show');
+  });
+}
+
+// Year in footer
+const y = document.getElementById('year');
+if (y) y.textContent = new Date().getFullYear();
+

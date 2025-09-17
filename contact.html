@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact From Paws to Ears">
+  <title>Contact • From Paws to Ears</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">From Paws to Ears</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">Menu</button>
+      <nav id="primary-nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="doberman.html">Doberman</a>
+        <a href="pomeranian.html">Pomeranian</a>
+        <a href="rabbit.html">Lionhead Dwarf Rabbit</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a question or tip? Send a note below.</p>
+      <form name="contact" method="post" action="#" autocomplete="on">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p class="card">Prefer email? Reach me at <a href="mailto:you@example.com">you@example.com</a>. You can wire this form later to an email service or static host (e.g., Netlify Forms).</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> From Paws to Ears</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+// Mobile menu toggle
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#primary-nav');
+if (toggle && nav){
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('show');
+  });
+}
+
+// Year in footer
+const y = document.getElementById('year');
+if (y) y.textContent = new Date().getFullYear();

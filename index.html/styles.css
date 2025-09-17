@@ -53,21 +53,21 @@
     allowfullscreen>
   </iframe>
 
-  <h2>Click the Button Below to See a Fun Fact 🧠</h2>
-  <button class="button" onclick="showFact()">Show Fun Fact</button>
-  <p id="funFact"></p>
+<h2>Click the Button Below to See a Fun Fact 🧠</h2>
+<button class="button" onclick="showFact()">Show Fun Fact</button>
+<p id="funFact"></p>
 
-  <script>
-    function showFact() {
-      const facts = [
-        "Did you know? Dobermans are one of the smartest dog breeds 🧠",
-        "Pomeranians are related to sled dogs from the Arctic! ❄️",
-        "Rabbits can be litter-trained like cats! 🐾"
-      ];
-      const randomIndex = Math.floor(Math.random() * facts.length);
-      document.getElementById("funFact").innerText = facts[randomIndex];
-    }
-  </script>
+<script>
+  function showFact() {
+    const facts = [
+      "Dobermans are among the top 5 smartest dog breeds 🧠",
+      "Pomeranians are descendants of sled dogs from the Arctic ❄️",
+      "Rabbits can be trained to use a litter box like cats! 🐾"
+    ];
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("funFact").innerText = facts[randomIndex];
+  }
+</script>
 
 </body>
 </html>

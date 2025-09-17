@@ -1,2 +1,83 @@
 # From-Paws-to-Ears
-educational and personal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet My Family Animals 🐾</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- From Paws to Ears -->
+
+</body>
+</html>
+
+</style>
+</head>
+<body>
+
+  <h1>🐶🐰 Meet My Family Animals 🐾</h1>
+
+  <h2>Animal List</h2>
+  <ul>
+    <li>Doberman 🐕</li>
+    <li>Pomeranian 🦊</li>
+    <li>Rabbit 🐇</li>
+  </ul>
+
+  <h2>Animal Traits Table</h2>
+  <table>
+    <tr>
+      <th>Animal</th>
+      <th>Breed</th>
+      <th>Temperament</th>
+      <th>Activity Level</th>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>Doberman</td>
+      <td>Protective 💪</td>
+      <td>High ⚡</td>
+    </tr>
+    <tr>
+      <td>Luna</td>
+      <td>Pomeranian</td>
+      <td>Playful 😄</td>
+      <td>Medium 🏃‍♀️</td>
+    </tr>
+    <tr>
+      <td>Snowball</td>
+      <td>Rabbit</td>
+      <td>Gentle 🌼</td>
+      <td>Low 💤</td>
+    </tr>
+  </table>
+
+  <h2>Learn More About Rabbits 🐇</h2>
+  <iframe 
+    width="420" 
+    height="315" 
+    src="https://www.youtube.com/embed/TW9d8vYrVFQ" 
+    title="Rabbit Care Video"
+    allowfullscreen>
+  </iframe>
+
+  <h2>Click the Button Below to See a Fun Fact 🧠</h2>
+  <button class="button" onclick="showFact()">Show Fun Fact</button>
+  <p id="funFact"></p>
+
+  <script>
+    function showFact() {
+      const facts = [
+        "Did you know? Dobermans are one of the smartest dog breeds 🧠",
+        "Pomeranians are related to sled dogs from the Arctic! ❄️",
+        "Rabbits can be litter-trained like cats! 🐾"
+      ];
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("funFact").innerText = facts[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
